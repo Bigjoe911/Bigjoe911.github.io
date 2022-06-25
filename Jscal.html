@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jscal</title>
+  </head>
+  <body>
+    <script>
+      const operator = prompt(
+        "Enter operator to perform the calculation(either +, -, *, /): "
+      );
+      const firstNum = parseFloat(prompt("Enter the first number: "));
+      const otherNum = parseFloat(prompt("Enter the second number"));
+      let result;
+      if (operator == "+") {
+        result = firstNum + otherNum;
+      } else if (operator == "-") {
+        result = firstNum - otherNum;
+      } else if (operator == "*") {
+        result = firstNum * otherNum;
+      } else if (operator == "/") {
+        result = firstNum / otherNum;
+      }
+      document.write(firstNum + operator + otherNum + "=" + result);
+    </script>
+  </body>
+</html>
